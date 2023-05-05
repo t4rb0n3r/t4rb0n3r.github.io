@@ -2,6 +2,7 @@
 @import 'variables.scss';
 @import 'heading.scss';
 @import 'nav.scss';
+@import 'twitter.scss';
 
 html {
     height: 100%;
@@ -15,6 +16,7 @@ body {
     color: $white100;
     background: url('../img/bg.jpeg') no-repeat center top;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 button, a {

@@ -84,6 +84,17 @@
         background: url("../img/icon-etherscan.svg");
         background-size: 20px; }
 
+.twitter {
+  display: flex;
+  width: calc(100% - 30px);
+  padding: 40px 15px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6); }
+  .twitter img {
+    max-width: 930px;
+    width: 100%; }
+
 html {
   height: 100%; }
 
@@ -94,7 +105,8 @@ body {
   font-family: 'Roboto', 'Lilita One', Arial, Verdana;
   color: #FFF;
   background: url("../img/bg.jpeg") no-repeat center top;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 button, a {
   outline: none;
