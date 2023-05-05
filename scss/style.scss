@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@400;700&display=swap');
+@import 'variables.scss';
+@import 'heading.scss';
+@import 'nav.scss';
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', 'Lilita One', Arial, Verdana;
+    color: $white100;
+    background: url('../img/bg.jpeg') no-repeat center top;
+    background-size: cover;
+}
+
+button, a {
+    outline: none;
+    cursor: pointer;
+}
+
+ul, p {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #4E5255; 
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #B6BEBD; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #CCD2D2;
+}
