@@ -33,6 +33,44 @@
         justify-content: flex-end;
         width: calc(100% - 100px);
 
+        .btn-buy {
+            z-index: 2;
+            margin-left: 10px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 24px;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            background-size: 300% 100%;
+            background-image: linear-gradient(to right, #9B513B, #FD8E28, #FD8E28, #FDBF28);
+    
+            &:hover {
+                color: #000;
+                background-position: 100% 0;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+                box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+
         .icon {
             margin-left: 10px;
             width: 20px;

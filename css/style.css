@@ -24,6 +24,38 @@
     .heading p a {
       color: #FFF;
       text-decoration: underline; }
+  .heading .btn-buy {
+    z-index: 2;
+    margin-top: 40px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 48px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #9B513B, #FD8E28, #FD8E28, #FDBF28); }
+    .heading .btn-buy:hover {
+      color: #000;
+      background-position: 100% 0;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); }
+      .heading .btn-buy:hover:after {
+        opacity: 1; }
   @media screen and (max-width: 576px) {
     .heading h1 {
       display: block;
@@ -61,6 +93,38 @@
     align-items: center;
     justify-content: flex-end;
     width: calc(100% - 100px); }
+    .nav .socials .btn-buy {
+      z-index: 2;
+      margin-left: 10px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 24px;
+      color: #FFF;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      background-size: 300% 100%;
+      background-image: linear-gradient(to right, #9B513B, #FD8E28, #FD8E28, #FDBF28); }
+      .nav .socials .btn-buy:hover {
+        color: #000;
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); }
+        .nav .socials .btn-buy:hover:after {
+          opacity: 1; }
     .nav .socials .icon {
       margin-left: 10px;
       width: 20px;
@@ -87,13 +151,45 @@
 .twitter {
   display: flex;
   width: calc(100% - 30px);
-  padding: 40px 15px;
+  padding: 60px 15px;
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.6); }
   .twitter img {
     max-width: 930px;
     width: 100%; }
+
+.tokenomics {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 30px);
+  padding: 60px 15px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8); }
+  .tokenomics h2 {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    font-family: 'Lilita One';
+    color: #FD8E28; }
+  .tokenomics ul {
+    margin: 0;
+    list-style-type: none; }
+    .tokenomics ul li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4); }
+      .tokenomics ul li .icon-token {
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin: 0 4px 0 10px;
+        background: url("../img/token.png") no-repeat center;
+        background-size: 16px; }
 
 html {
   height: 100%; }
@@ -129,14 +225,14 @@ ul, p {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #4E5255; }
+  background: rgba(0, 0, 0, 0.8); }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #B6BEBD; }
+  background: #FFF; }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #CCD2D2; }
+  background: #FFF; }
 
 /*# sourceMappingURL=style.css.map */
