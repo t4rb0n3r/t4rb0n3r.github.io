@@ -4,6 +4,8 @@
 @import 'nav.scss';
 @import 'twitter.scss';
 @import 'tokenomics.scss';
+@import 'funding.scss';
+@import 'rocket.scss';
 
 html {
     height: 100%;
@@ -18,6 +20,7 @@ body {
     background: url('../img/bg.jpeg') no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden; 
 }
 
 button, a {

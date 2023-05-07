@@ -1,0 +1,21 @@
+.rocket {
+    position: fixed;
+    z-index: 10;
+    display: block;
+    left: -40px;
+    bottom: -60px;
+    width: 104px;
+    height: 121px;
+    background: url('../img/rocket.png') no-repeat;
+    background-size: 104px 121px;
+    animation-name: rocket;
+    animation-duration: 8s;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+
+    @keyframes rocket {
+        from {left: -40px; bottom: -60px;}
+        to {left: 100%; bottom: 100%;}
+    }
+}
