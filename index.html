@@ -31,7 +31,7 @@
     <meta name="theme-color" content="#FFF"/>
 </head>
 <body>
-    <div class="rocket"></div>
+    <!--<div class="rocket"></div>-->
     <div class="nav">
         <div class="name"><i class="logo"></i>$TRBNR</div>
         <div class="socials">
@@ -62,20 +62,35 @@
     <div class="funding">
         <h3>Supported by community</h3>
         <p>As TURBONER™ is currently a community-driven project, your donation can have a significant impact on our marketing and some development efforts. Help us achieve our goals and experience substantial $TRBNR growth as soon as possible.</p>
+        <h4>EVM address (ETH, BSC, ARB, MATIC tokens etc)<span class="hidden-address" id="WalletAddress">0x228b5006Eeb8a62C3c79932ac94ccfcB0F233e75</span></h4>
+        <div class="copy">
+            <span class="address" onclick="copyContent()">0x228...3e75</span><button class="btn" onclick="copyContent()"></button>
+        </div>
+        <ul>
+            <li>or do it with a swap</li>
+        </ul>        
         <div class="donation-btn">
             <script>
                 var JMPAY_DONATION_WALLET_EVM = '0x228b5006Eeb8a62C3c79932ac94ccfcB0F233e75';
                 var JMPAY_DONATION_WALLET_TRON = 'TYrsvG7tMadqnE7DizXRY5UVUxtHJ2Yi9r';
-                var JMPAY_DONATION_BUTTONCOLOR = '#FD8E28';
+                var JMPAY_DONATION_BUTTONCOLOR = 'rgba(27, 23, 21, 0.7)';
                 var JMPAY_DONATION_TEXTCOLOR = '#FFF';
             </script>
             <script src="https://pay.just.money/assets/js/donateButton_1.0.js"></script>
         </div>
-        <ul>
-            <li>EVM: 0x228b5006Eeb8a62C3c79932ac94ccfcB0F233e75</li>
-            <li>TRON: TYrsvG7tMadqnE7DizXRY5UVUxtHJ2Yi9r</li>
-        </ul>
     </div>
+    
+    <script>
+      let text = document.getElementById('WalletAddress').innerHTML;
+      const copyContent = async () => {
+        try {
+          await navigator.clipboard.writeText(text);
+          console.log('Content copied to clipboard');
+        } catch (err) {
+          console.error('Failed to copy: ', err);
+        }
+      }
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B24WCF56R3"></script>

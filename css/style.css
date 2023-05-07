@@ -162,7 +162,8 @@
   backdrop-filter: blur(6px); }
   .twitter img {
     max-width: 930px;
-    width: 100%; }
+    width: 100%;
+    margin: 0 auto; }
 
 .tokenomics {
   display: flex;
@@ -185,17 +186,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 18px;
+      line-height: 30px;
       text-align: center;
       text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4); }
       .tokenomics ul li .icon-token {
         display: block;
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
         margin: 0 4px 0 10px;
         background: url("../img/token.png") no-repeat center;
-        background-size: 16px; }
+        background-size: 18px; }
 
 .funding {
   display: flex;
@@ -216,26 +217,69 @@
     font-weight: normal;
     text-align: center;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4); }
+  .funding h4 {
+    margin: 0;
+    width: 100%;
+    display: block;
+    font-size: 24px;
+    font-family: 'Lilita One';
+    color: #FFF;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4); }
+    .funding h4 .hidden-address {
+      display: none; }
+  .funding .copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px; }
+    .funding .copy .address {
+      font-size: 64px;
+      color: #FD8E28;
+      font-size: 64px;
+      font-family: 'Lilita One';
+      font-weight: normal;
+      cursor: pointer; }
+    .funding .copy .btn {
+      display: block;
+      margin-left: 10px;
+      width: 48px;
+      height: 48px;
+      background: url("../img/icon-copy.svg") no-repeat center;
+      background-size: 48px;
+      border-radius: 4px;
+      border: none; }
   .funding p {
     margin: 0 auto;
     width: 100%;
     max-width: 930px;
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     padding-bottom: 40px;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4); }
   .funding ul {
     margin: 0;
-    padding-top: 20px;
+    padding-bottom: 20px;
     list-style-type: none; }
     .funding ul li {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 12px;
-      line-height: 16px;
+      font-size: 18px;
+      line-height: 18px;
       text-align: center;
+      text-transform: uppercase;
       text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4); }
+  @media screen and (max-width: 576px) {
+    .funding .copy .address {
+      font-size: 36px;
+      font-size: 36px; }
+    .funding .copy .btn {
+      width: 36px;
+      height: 36px;
+      background: url("../img/icon-copy.svg") no-repeat center;
+      background-size: 36px; } }
 
 .rocket {
   position: fixed;
